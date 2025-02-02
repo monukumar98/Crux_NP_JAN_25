@@ -14,14 +14,14 @@ public class Pattern_Rhombus {
 			// space
 			int i = 1;
 			while (i <= space) {
-				System.out.print("  ");
+				System.out.print("\t");
 				i++;
 			}
 			// star
 			int j = 1;
 			int p = val;
 			while (j <= star) {
-				System.out.print(p + " ");
+				System.out.print(p + "\t");
 				if (j < star / 2 + 1) {
 					p++;
 				} else {
