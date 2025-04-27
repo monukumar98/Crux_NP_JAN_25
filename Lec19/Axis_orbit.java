@@ -5,7 +5,7 @@ public class Axis_orbit {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String s = "naan";
-
+		System.out.println(Palindromic(s));
 	}
 
 	public static int Palindromic(String s) {
@@ -19,7 +19,7 @@ public class Axis_orbit {
 				odd++;
 			}
 		}
-		//even
+		// even
 		int even = 0;
 		for (double axis = 0.5; axis < s.length(); axis++) {
 			for (double orbit = 0.5; axis - orbit >= 0 && axis + orbit < s.length(); orbit++) {
@@ -29,7 +29,7 @@ public class Axis_orbit {
 				even++;
 			}
 		}
-		return odd+even;
+		return odd + even;
 
 	}
 
