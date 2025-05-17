@@ -17,9 +17,28 @@ public class Reverse_Stack {
 		System.out.println(st);
 	}
 
+     //O(n^2)
 	private static void Reverse(Stack<Integer> st) {
 		// TODO Auto-generated method stub
-		
+		if (st.isEmpty()) {
+
+			return;
+		}
+		int x = st.pop();
+		Reverse(st);
+		addlast(st, x);
+
 	}
 
+	private static void addlast(Stack<Integer> st, int item) {
+		// TODO Auto-generated method stub
+		if (st.isEmpty()) {
+			st.push(item);
+			return;
+		}
+		int x = st.pop();
+		addlast(st, item);
+		st.push(x);
+
+	}
 }
