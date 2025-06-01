@@ -16,7 +16,7 @@ public class Queue_Using_LinkedList {
 		ll.add(60);
 		System.out.println(ll.remove());// remove first Dqeueue
 		System.out.println(ll.poll());// remove first Dqeueue
-		System.out.println(ll.peek());// get first
+		System.out.println(ll.peek());// get firsts
 
 	}
 
